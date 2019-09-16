@@ -7,7 +7,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import AnimatedBg from "react-animated-bg";
-
+/*esto está solo de base para pruebas al igual que Jojo.js*/
 export default () => (
   
   <Grid centered columns={3}>

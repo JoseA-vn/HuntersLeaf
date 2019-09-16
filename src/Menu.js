@@ -1,10 +1,8 @@
 import React from 'react';
 import {Image, Menu, Button } from 'semantic-ui-react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Jojo from "./Jojo"
 import Login from "./Login"
-import App from "./App"
-
+/*este menu ess necesario que esté en todas las páginas que ustedes creen*/
 function Index() {
   return <h2>Home</h2>;
 }

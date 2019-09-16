@@ -5,7 +5,7 @@ import image1 from "./redwoods.png"
 import Menu from './Menu';
 import Login from './Login';
 import {Grid} from 'semantic-ui-react'
-
+/*esta página es la base y lo único que debe contener es el menú y el fondo*/ 
 function App() {
   return (
 
