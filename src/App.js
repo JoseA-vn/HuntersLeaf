@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BackgroundSlider from 'react-background-slider'
+import image1 from "./redwoods.png"
+import Menu from './Menu';
+import Login from './Login';
+import {Grid} from 'semantic-ui-react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <BackgroundSlider images={[image1]} duration={3} transition={8}/>
+      <div>
+        <Grid columns={1}>
+            <Grid.Row>
+              <Menu/>
+            </Grid.Row>
+
+            <Grid.Row>
+            </Grid.Row>
+            <Grid.Row>
+            </Grid.Row>
+        </Grid>
+      </div>
     </div>
   );
 }

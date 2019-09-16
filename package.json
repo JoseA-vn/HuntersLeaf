@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "particlesjs": "^2.2.3",
     "react": "^16.9.0",
+    "react-animated-bg": "^1.1.1",
+    "react-background-slider": "^1.2.0",
+    "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-particles-js": "^2.7.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-water-wave": "^1.0.4",
+    "rnb-rc-menu": "^7.4.30",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "vue-particles": "^1.0.9"
   }
 }
