@@ -3,23 +3,16 @@ import './App.css';
 import BackgroundSlider from 'react-background-slider'
 import image1 from "./redwoods.png"
 import Menu from './Menu';
-import Login from './Login';
 import {Grid} from 'semantic-ui-react'
 /*esta página es la base y lo único que debe contener es el menú y el fondo*/ 
 function App() {
   return (
-
     <div>
-      <BackgroundSlider images={[image1]} duration={3} transition={8}/>
+      <BackgroundSlider images={[image1]} duration={2} transition={3}/>
       <div>
         <Grid columns={1}>
             <Grid.Row>
               <Menu/>
-            </Grid.Row>
-
-            <Grid.Row>
-            </Grid.Row>
-            <Grid.Row>
             </Grid.Row>
         </Grid>
       </div>
