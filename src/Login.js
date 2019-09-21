@@ -7,14 +7,14 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import AnimatedBg from "react-animated-bg";
-/*esto está solo de base para pruebas al igual que Jojo.js*/
+/*Base de un Login para testeo.*/
 export default () => (
   
   <Grid centered columns={3}>
     <Grid.Column>
     <Grid centered columns={2}>
       <AnimatedBg colors={["#EFF166" , "#D68C11 ","#FF0000 "]} duration={3} delay={0} timingFunction="ease-out" className="section-styles">
-        Realice Aquí Su Conexión
+        Página de José
       </AnimatedBg>
     </Grid>
       <Segment>
