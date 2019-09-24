@@ -16,6 +16,7 @@ export default () => (
       <AnimatedBg colors={["#EFF166" , "#D68C11 ","#FF0000 "]} duration={3} delay={0} timingFunction="ease-out" className="section-styles">
         Página de José
       </AnimatedBg>
+      
     </Grid>
       <Segment>
         <Form size="mini">
