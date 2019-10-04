@@ -1,23 +1,31 @@
 import React from 'react';
-import './App.css';
-import BackgroundSlider from 'react-background-slider'
-import image1 from "./redwoods.png"
-import Menu from './Menu';
-import {Grid} from 'semantic-ui-react'
-/*esta página es la base y lo único que debe contener es el menú y el fondo*/ 
-function App() {
-  return (
-    <div>
-      <BackgroundSlider images={[image1]} duration={2} transition={3}/>
-      <div>
-        <Grid columns={1}>
-            <Grid.Row>
-              <Menu/>
-            </Grid.Row>
-        </Grid>
-      </div>
-    </div>
-  );
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Jose from "./Jose"
+import Home from "./Home";
+import Raul from './Raul';
+
+function Index() {
+  return <Home/>;
 }
 
-export default App;
+function JoseCall() {
+  return <Jose />;
+}
+
+function Raulcall() {
+  return <Raul />;
+}
+
+function Users() {
+  return <h2></h2>;
+}
+export default () => (
+
+  <Router>
+    <Route path="/" exact component={Index} />
+    <Route path="/Jose/" component={JoseCall} />
+    <Route path="/Raul/" component={Raulcall} />
+    <Route path="/users/" component={Users} />
+  </Router>
+
+);

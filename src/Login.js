@@ -9,15 +9,14 @@ import {
 import AnimatedBg from "react-animated-bg";
 /*Base de un Login para testeo.*/
 export default () => (
-  
+
   <Grid centered columns={3}>
     <Grid.Column>
-    <Grid centered columns={2}>
-      <AnimatedBg colors={["#EFF166" , "#D68C11 ","#FF0000 "]} duration={3} delay={0} timingFunction="ease-out" className="section-styles">
-        Página de José
+      <Grid centered columns={2}>
+        <AnimatedBg colors={["#EFF166", "#D68C11 ", "#FF0000 "]} duration={3} delay={0} timingFunction="ease-out" className="section-styles">
+          Página de José
       </AnimatedBg>
-      
-    </Grid>
+      </Grid>
       <Segment>
         <Form size="mini">
           <Form.Input
@@ -33,7 +32,7 @@ export default () => (
             placeholder="Password"
             type="password"
           />
-          <Button color="facebook" fluid size="mini">
+          <Button color="facebook" fluid size="mini" >
             Conectarse
           </Button>
         </Form>

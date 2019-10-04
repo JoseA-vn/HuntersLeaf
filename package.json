@@ -15,7 +15,8 @@
     "react-water-wave": "^1.0.4",
     "rnb-rc-menu": "^7.4.30",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "semantic-ui-react": "^0.88.1",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
