@@ -1,6 +1,6 @@
 import React from 'react';
 import BackgroundSlider from 'react-background-slider'
-import image1 from "./redwoods.png"
+import image1 from "./Images/redwoods.png"
 
 
 
