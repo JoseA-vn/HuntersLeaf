@@ -20,14 +20,10 @@ export default () => (
         </Grid.Row>
         <Grid.Row>
         </Grid.Row>
-        <Segment basic>
-          <Grid centered columns={3}>
-            <Message size="mini">
-              Esta es la página principal de este módulo, su objetivo aún no es claro y sólo debiese servir
-              para redireccionar hacia el resto de páginas.
-        </Message>
-          </Grid>
-        </Segment>
+        <Grid.Row>
+        </Grid.Row>
+        <Grid.Row>
+        </Grid.Row>
         <Grid.Row>
 
           <Login />
