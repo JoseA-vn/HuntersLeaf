@@ -1,8 +1,12 @@
 import React from 'react';
 import { Button, Grid, Message, Image } from 'semantic-ui-react';
 import logo from "./Images/trifenix.png";
+import Menu from "./Menu";
 
 export default () => (
+    <div>
+    <Menu/>
+    <div className="background">
 
     <Grid centered columns={3}>
 
@@ -33,6 +37,11 @@ export default () => (
 
         </Grid>
     </Grid >
+    </div>
+    </div>
+
+    
+
 
 
 
