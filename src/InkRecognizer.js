@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Icon, Grid, Message, GridColumn } from 'semantic-ui-react';
-import AnimatedBg from "react-animated-bg";
+
 import BackgroundSlider from 'react-background-slider'
 import image1 from "./Images/redwoods.png"
 import Menu from "./MenuVer";
