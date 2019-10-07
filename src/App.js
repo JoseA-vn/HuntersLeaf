@@ -1,31 +1,34 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Jose from "./Jose"
+import InkRecognizer from "./InkRecognizer"
 import Home from "./Home";
-import Raul from './Raul';
+import DataCatalog from './DataCatalog';
+
+import TextAnalysis from './TextAnalysis';
+
 
 function Index() {
   return <Home/>;
 }
 
 function JoseCall() {
-  return <Jose />;
+  return <InkRecognizer />;
 }
 
 function Raulcall() {
-  return <Raul />;
+  return <DataCatalog />;
 }
 
 function Users() {
-  return <h2></h2>;
+  return <TextAnalysis/>
 }
 export default () => (
 
   <Router>
     <Route path="/" exact component={Index} />
-    <Route path="/Jose/" component={JoseCall} />
-    <Route path="/Raul/" component={Raulcall} />
-    <Route path="/users/" component={Users} />
+    <Route path="/InkRecognizer/" component={JoseCall} />
+    <Route path="/DataCatalog/" component={Raulcall} />
+    <Route path="/TextAnalysis/" component={Users} />
   </Router>
 
 );

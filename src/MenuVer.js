@@ -9,13 +9,13 @@ export default () => (
       <Image size="mini" href="/" src={require("./Images/jeje.jpg")} />
     </Menu.Item>
     <Menu.Item>
-      <Button secondary size='mini' href="/Jose/">Jose</Button>
+      <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>
     </Menu.Item>
     <Menu.Item>
-      <Button secondary size='mini' href="/Raul/">Raul</Button>
+      <Button secondary size='mini' href="/DataCatalog/">DataCatalog</Button>
     </Menu.Item>
     <Menu.Item>
-      <Button secondary href="/users/">Registrarse</Button>
+      <Button secondary href="/TextAnalysis/">TextAnalysis</Button>
     </Menu.Item>
   </Menu>
 
