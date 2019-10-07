@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import InkRecognizer from "./InkRecognizer"
 import Home from "./Home";
-import DataCalog from './DataCatalog';
+import DataCatalog from './DataCatalog';
 
 import TextAnalysis from './TextAnalysis';
 
