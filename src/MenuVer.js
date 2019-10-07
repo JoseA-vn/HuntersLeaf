@@ -4,18 +4,18 @@ import { Image, Menu, Button } from 'semantic-ui-react';
 
 export default () => (
 
-  <Menu inverted compact icon='labeled' size='tiny' borderless >
+  <Menu inverted icon='labeled' size='small' borderless >
     <Menu.Item>
       <Image size="mini" href="/" src={require("./Images/jeje.jpg")} />
     </Menu.Item>
     <Menu.Item>
-    <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>
+      <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>
     </Menu.Item>
     <Menu.Item>
-    <Button secondary size='mini' href="/DataCalog/">DataCalog</Button>
+      <Button secondary size='mini' href="/DataCalog/">DataCalog</Button>
     </Menu.Item>
     <Menu.Item>
-    <Button secondary href="/TextAnalysis/">TextAnalysis</Button>
+      <Button secondary href="/TextAnalysis/">TextAnalysis</Button>
     </Menu.Item>
   </Menu>
 

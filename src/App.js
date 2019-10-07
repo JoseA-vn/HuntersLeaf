@@ -1,23 +1,34 @@
 import React from 'react';
-import './App.css';
-import BackgroundSlider from 'react-background-slider'
-import image1 from "./redwoods.png"
-import Menu from './Menu';
-import {Grid} from 'semantic-ui-react'
-/*esta página es la base y lo único que debe contener es el menú y el fondo*/ 
-function App() {
-  return (
-    <div>
-      <BackgroundSlider images={[image1]} duration={2} transition={3}/>
-      <div>
-        <Grid columns={1}>
-            <Grid.Row>
-              <Menu/>
-            </Grid.Row>
-        </Grid>
-      </div>
-    </div>
-  );
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import InkRecognizer from "./InkRecognizer"
+import Home from "./Home";
+import DataCalog from './DataCalog';
+
+import TextAnalysis from './TextAnalysis';
+
+
+function Index() {
+  return <Home/>;
 }
 
-export default App;
+function JoseCall() {
+  return <InkRecognizer />;
+}
+
+function Raulcall() {
+  return <DataCalog />;
+}
+
+function Users() {
+  return <TextAnalysis/>
+}
+export default () => (
+
+  <Router>
+    <Route path="/" exact component={Index} />
+    <Route path="/InkRecognizer/" component={JoseCall} />
+    <Route path="/DataCalog/" component={Raulcall} />
+    <Route path="/TextAnalysis/" component={Users} />
+  </Router>
+
+);
