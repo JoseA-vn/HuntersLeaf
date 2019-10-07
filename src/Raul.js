@@ -22,7 +22,7 @@ export default () => (
         <Message color= "purple" size ="small">
                 
         </Message>
-        </Grid>
+    </Grid>
 
 
         <Grid centered columns = {1} >
@@ -31,26 +31,7 @@ export default () => (
 
             </Image>
             
-     </Grid>
+        </Grid>
 </Grid >
-                
-    
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 );
