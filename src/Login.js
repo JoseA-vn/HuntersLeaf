@@ -25,7 +25,7 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/Jose/";
+          window.location.href = "/InkRecognizer/";
         }
         break;
     }

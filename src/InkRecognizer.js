@@ -1,30 +1,74 @@
 import React from 'react';
-import { Button, Icon, Grid, Message, GridColumn } from 'semantic-ui-react';
-
-import BackgroundSlider from 'react-background-slider'
-import image1 from "./Images/redwoods.png"
+import { Image, Icon, Grid, Message, GridColumn, Segment } from 'semantic-ui-react';
+import logo from "./Images/BlackWood.jpg";
+import log from "./Images/Ink_Recognizer.jpeg";
+import Images from "./Images/Ink_recognizer2.jpeg"
 import Menu from "./MenuVer";
+import { Title, Sub, Blocktext } from "./Styled_components/Letras";
+var sectionBackground = {
+    width: "100%",
+    height: "100vh",
+    backgroundImage: `url(${logo})`
+
+}
 export default () => (
 
-    <div>
-        <BackgroundSlider images={[image1]} duration={2} transition={3} />
+    <section style={sectionBackground}>
         <Menu />
-        <Grid columns={3}>
-            <GridColumn>
-                <Message>
-                    hola
-            </Message>
-            </GridColumn>
-            <GridColumn>
-                <Message>
-                    hola
-            </Message>
-            </GridColumn>
-            <GridColumn>
-                <Message>
-                    hola
-            </Message>
-            </GridColumn>
+        <Grid centered>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="olive" >
+                    <Grid >
+                        <Grid.Row>
+                            <Grid.Column width={5}>
+                                <Segment inverted color="olive">
+                                    <Image src={log} />
+                                </Segment>
+                            </Grid.Column>
+                            <Grid.Column width={10}>
+                                <Title subrayar>
+                                    Ejemplo sobre como usarlo
+                                </Title>
+                                <Blocktext >
+                                    
+                                </Blocktext>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+                </Segment>
+            </Grid.Column>
         </Grid>
-    </div>
+
+        <Grid centered >
+        <Grid.Column width={15}>
+        <Segment inverted tertiary color = "olive">
+        
+        </Segment>
+        </Grid.Column>
+        </Grid>
+        <Grid centered>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="olive" >
+                    <Grid >
+                        <Grid.Row>
+                            <Grid.Column width={5}>
+                                <Segment inverted color="olive">
+                                    <Image src={Images} />
+                                </Segment>
+                            </Grid.Column>
+                            <Grid.Column width={10}>
+                                <Title subrayar>
+                                    Informacion sobre la pagina
+                                </Title>
+                                
+                                <Blocktext >
+                                Ink Recognizer es un servicio que utiliza la inteligencia artificial para reconocer patrones realizados por un lápiz digital estos ya sean escritura manual, objetos, formas, diseños, etc
+                                </Blocktext>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+                </Segment>
+            </Grid.Column>
+        </Grid>
+    </section>
 );
