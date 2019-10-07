@@ -19,18 +19,21 @@ export default () => (
         <Grid >
             <Grid.Row>
                 <Grid.Column width={3}>
-                    <Image src='https://www.ontotext.com/wp-content/uploads/2016/01/multitudes-of-content-illustration.jpg' />
+                    <Image src='https://images.akiraanalytics.com/insights/akira-analytics-what-is-data-catalog.png' />
                 </Grid.Column>
                 <Grid.Column width={13}>
                     <Sub>
                         Informacion sobre la pagina
                     </Sub>
+                    <Title>
+                    alvarado la chupa rico
+                    </Title>
                 </Grid.Column>
             </Grid.Row>
 
             <Grid.Row>
                 <Grid.Column width={3}>
-                    <Image src='https://www.questionpro.com/userimages/site_media/text-analysis.png' />
+                    <Image src='https://i.imgur.com/f3nK7gh.png' />
                 </Grid.Column>
                 <Grid.Column width={10}>
                     <Title>

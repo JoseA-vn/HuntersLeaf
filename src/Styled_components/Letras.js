@@ -8,7 +8,7 @@ const Title = styled.h1`
 `;
 const Sub = styled.h2`
 font-family: Arial;
-font-size: 1.5em;
+font-size: 3em;
 text-align: left;
 color: blue;
 `;
