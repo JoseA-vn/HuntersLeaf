@@ -17,6 +17,9 @@ export default () => (
     <Menu.Item>
     <Button secondary href="/TextAnalysis/">TextAnalysis</Button>
     </Menu.Item>
+    <Menu.Item>
+      <Button secondary size = 'mini' href="/Ignacio/">Ignacio</Button>
+    </Menu.Item>
   </Menu>
 
 );
