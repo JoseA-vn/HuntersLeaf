@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Grid, Message, Image, GridColumn } from 'semantic-ui-react';
 import logo from "./Images/BlackWood.jpg"
 import Menu from "./MenuVer";
-import {Title, Sub} from "./Styled_components/Letras";
+import {Title, Sub, Blocktext} from "./Styled_components/Letras";
 
 var sectionBackground = {
     width: "100%",
@@ -26,7 +26,7 @@ export default () => (
                         Informacion sobre la pagina
                     </Sub>
                     <Title>
-                    alvarado la chupa rico
+                    
                     </Title>
                 </Grid.Column>
             </Grid.Row>
@@ -36,9 +36,12 @@ export default () => (
                     <Image src='https://i.imgur.com/f3nK7gh.png' />
                 </Grid.Column>
                 <Grid.Column width={10}>
-                    <Title>
-                    Holita
-                    </Title>
+                    <Sub>
+                    Aqui va la informacion del titulo
+                    </Sub>
+                    <Blocktext>
+                        Este sera el bloque de texto
+                        </Blocktext>
       </Grid.Column>
                 <Grid.Column width={3}>
                     <Image />
