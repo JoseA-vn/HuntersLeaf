@@ -12,7 +12,7 @@ export default () => (
     <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>
     </Menu.Item>
     <Menu.Item>
-    <Button secondary size='mini' href="/DataCalog/">DataCalog</Button>
+    <Button secondary size='mini' href="/DataCatalog/">DatataCalog</Button>
     </Menu.Item>
     <Menu.Item>
     <Button secondary href="/TextAnalysis/">TextAnalysis</Button>

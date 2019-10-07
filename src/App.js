@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import InkRecognizer from "./InkRecognizer"
 import Home from "./Home";
-import DataCalog from './DataCalog';
+import DataCalog from './DataCatalog';
 
 import TextAnalysis from './TextAnalysis';
 
@@ -16,7 +16,7 @@ function JoseCall() {
 }
 
 function Raulcall() {
-  return <DataCalog />;
+  return <DataCatalog />;
 }
 
 function Users() {
@@ -27,7 +27,7 @@ export default () => (
   <Router>
     <Route path="/" exact component={Index} />
     <Route path="/InkRecognizer/" component={JoseCall} />
-    <Route path="/DataCalog/" component={Raulcall} />
+    <Route path="/DataCatalog/" component={Raulcall} />
     <Route path="/TextAnalysis/" component={Users} />
   </Router>
 
