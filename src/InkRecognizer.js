@@ -26,11 +26,11 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar color= "purple">
+                                <Title morado>
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
-                                    
+
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -40,11 +40,11 @@ export default () => (
         </Grid>
 
         <Grid centered >
-        <Grid.Column width={15}>
-        <Segment inverted tertiary color = "olive">
-        
-        </Segment>
-        </Grid.Column>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="olive">
+
+                </Segment>
+            </Grid.Column>
         </Grid>
         <Grid centered>
             <Grid.Column width={15}>
@@ -57,12 +57,12 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title morado>
                                     Informacion sobre la pagina
                                 </Title>
-                                
-                                <Blocktext >
-                                Ink Recognizer es un servicio que utiliza la inteligencia artificial para reconocer patrones realizados por un lápiz digital estos ya sean escritura manual, objetos, formas, diseños, etc
+
+                                <Blocktext>
+                                    Ink Recognizer es un servicio que utiliza la inteligencia artificial para reconocer patrones realizados por un lápiz digital estos ya sean escritura manual, objetos, formas, diseños, etc
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -71,12 +71,12 @@ export default () => (
             </Grid.Column>
         </Grid>
         <Grid centered >
-        <Grid.Column width={15}>
-        <Segment inverted tertiary color = "olive">
-        
-        </Segment>
-        </Grid.Column>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="olive">
+
+                </Segment>
+            </Grid.Column>
         </Grid>
-        
+
     </section>
 );

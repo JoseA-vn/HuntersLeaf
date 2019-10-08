@@ -4,7 +4,11 @@ import {
   Message,
   Segment,
 } from 'semantic-ui-react';
+import Modal from "./Home";
 /*Base de un Login para testeo.*/
+function Mufuncion() {
+  return  ;
+}
 
 class FormExampleCaptureValues extends Component {
 //  state = { todos : [] }
@@ -25,7 +29,11 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/InkRecognizer/";
+          window.location.href = "/Ignacio/";
+        }
+        else 
+        {
+          
         }
         break;
     }

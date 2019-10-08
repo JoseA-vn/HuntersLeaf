@@ -27,7 +27,7 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title>
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
@@ -54,16 +54,16 @@ export default () => (
                         <Grid.Row>
                             <Grid.Column width={4}>
                                 <Segment inverted color="purple">
-                                    <Image src = {lo}/>
+                                    <Image src={lo} />
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar >
+                                <Title >
                                     Informacion sobre la pagina
                                 </Title>
 
-                                <Blocktext >
-                                Es un servicio el cual permite analizar textos, identificando idioma, opinión respecto al tema, frases clave y entidades mencionadas en el texto esta api es capaz de detectar 120 idiomas
+                                <Blocktext naranja>
+                                    Es un servicio el cual permite analizar textos, identificando idioma, opinión respecto al tema, frases clave y entidades mencionadas en el texto esta api es capaz de detectar 120 idiomas
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -72,11 +72,11 @@ export default () => (
             </Grid.Column>
         </Grid>
         <Grid centered >
-        <Grid.Column width={15}>
-        <Segment inverted tertiary color = "purple">
-        
-        </Segment>
-        </Grid.Column>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="purple">
+
+                </Segment>
+            </Grid.Column>
         </Grid>
     </section>
 
