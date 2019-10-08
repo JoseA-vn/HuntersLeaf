@@ -4,7 +4,15 @@ import {
   Message,
   Segment,
 } from 'semantic-ui-react';
+import Modal from "./Home";
 /*Base de un Login para testeo.*/
+function Mufuncion() {
+  return          <Message
+  error
+  header='Action Forbidden'
+  content='You can only sign up for an account once with a given e-mail address.'
+/>;
+}
 
 class FormExampleCaptureValues extends Component {
 //  state = { todos : [] }
@@ -25,7 +33,11 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/Jose/";
+          window.location.href = "/Ignacio/";
+        }
+        else 
+        {
+          Mufuncion()
         }
         break;
     }
