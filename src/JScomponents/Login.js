@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 import { Form, Message, Segment } from 'semantic-ui-react';
 
 
-function Mufuncion() {
-  return          <Message
-  error
-  header='Action Forbidden'
-  content='You can only sign up for an account once with a given e-mail address.'
-/>;
-}
+
 
 class FormExampleCaptureValues extends Component {
   //  state = { todos : [] }
@@ -27,14 +21,11 @@ class FormExampleCaptureValues extends Component {
   handleSubmit = () => {
     const { name, email } = this.state
     switch (name) {
-      case "jose":
-        if (email == "jose") {
-          window.location.href = "/TextAnalysis/";
+      case "inicio":
+        if (email == "inicio") {
+          window.location.href = "/Iniciar/";
         }
-        else 
-        {
-          Mufuncion()
-        }
+
         break;
     }
   }
@@ -66,8 +57,8 @@ class FormExampleCaptureValues extends Component {
 
         </Form>
         <Message size="small">
-          Email= jose<br></br>
-          Password = jose
+          Email= inicio<br></br>
+          Password = inicio
         </Message>
       </Segment >
     )

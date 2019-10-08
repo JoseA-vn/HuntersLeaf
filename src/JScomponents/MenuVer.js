@@ -9,6 +9,9 @@ export default () => (
       <Image size="mini" href="/" src={require("../Images/jeje.jpg")} />
     </Menu.Item>
     <Menu.Item>
+      <Button secondary href="/Iniciar/">Inicio</Button>
+    </Menu.Item>
+    <Menu.Item>
       <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>
     </Menu.Item>
     <Menu.Item>

@@ -20,10 +20,10 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={8}>
-                                <Title subrayar>
+                                <Title verde>
                                     Data Catalog
                                 </Title>
-                                <Blocktext >
+                                <Blocktext blanco >
                                     Es un servicio el cual permite a cualquier tipo de usuario un control sobre
                                     sus datos haciendo de esta forma que sea más sencillo la búsqueda de ellos
                                     en las bases de datos a nivel empresarial.
@@ -53,13 +53,20 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={8}>
-                                <Blocktext >
+                                <Blocktext blanco >
                                     El servicio es gratuito si se cuenta con una cuenta profesional, para más
                                     información <a href="https://azure.microsoft.com/es-es/services/data-catalog/">pulse aquí</a>
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
+                </Segment>
+            </Grid.Column>
+        </Grid>
+        <Grid centered >
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="brown">
+
                 </Segment>
             </Grid.Column>
         </Grid>

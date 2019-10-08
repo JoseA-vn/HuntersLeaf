@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 
 const Title = styled.h1`
   font-family: Courier New;
@@ -8,11 +8,11 @@ const Title = styled.h1`
   color: #6da4fc;
   text-shadow: 3px 2px black;
 
-  ${props => props.morado&& css`
+  ${props => props.morado && css`
   text-decoration: underline;
   color : #ff4dff;
 `}
-${props => props.verde&& css`
+${props => props.verde && css`
 text-decoration: underline;
 color : #66ffb3;
 `}
@@ -31,11 +31,14 @@ text-align: justify;
 font-size: 20px;
 line-height: 1.5;
 color: #26b54c;
-${props => props.blanco&& css`
+${props => props.blanco && css`
   color: whitesmoke;
 `}
-${props => props.naranja&& css`
+${props => props.naranja && css`
   color: #ffd280;
 `}
+${props => props.negro && css`
+  color: black;
+`}
 `;
-export {Sub,Title,Blocktext}
+export { Sub, Title, Blocktext }
