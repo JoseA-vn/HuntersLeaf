@@ -20,6 +20,6 @@ steps:
     git config user.name "jose"
     git checkout master
     git add --all
-    git push https://$(gitToken)@github.com/JoseA-vn/HuntersLeaf. --force
+    git push https://$(gitToken)@github.com/JoseA-vn/HuntersLeaf.git --force
   displayName: 'Github'
  
