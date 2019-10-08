@@ -72,6 +72,13 @@ export default () => (
                 </Segment>
             </Grid.Column>
         </Grid>
+        <Grid centered >
+        <Grid.Column width={15}>
+        <Segment inverted tertiary color = "brown">
+        
+        </Segment>
+        </Grid.Column>
+        </Grid>
     </section>
 
     

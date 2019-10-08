@@ -52,7 +52,7 @@ export default () => (
                 <Segment inverted tertiary color="purple" >
                     <Grid >
                         <Grid.Row>
-                            <Grid.Column width={5}>
+                            <Grid.Column width={4}>
                                 <Segment inverted color="purple">
                                     <Image src = {lo}/>
                                 </Segment>
@@ -70,6 +70,13 @@ export default () => (
                     </Grid>
                 </Segment>
             </Grid.Column>
+        </Grid>
+        <Grid centered >
+        <Grid.Column width={15}>
+        <Segment inverted tertiary color = "purple">
+        
+        </Segment>
+        </Grid.Column>
         </Grid>
     </section>
 

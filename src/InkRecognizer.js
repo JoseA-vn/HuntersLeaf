@@ -26,7 +26,7 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title subrayar color= "purple">
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
@@ -70,5 +70,13 @@ export default () => (
                 </Segment>
             </Grid.Column>
         </Grid>
+        <Grid centered >
+        <Grid.Column width={15}>
+        <Segment inverted tertiary color = "olive">
+        
+        </Segment>
+        </Grid.Column>
+        </Grid>
+        
     </section>
 );
