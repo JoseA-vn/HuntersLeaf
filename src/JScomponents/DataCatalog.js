@@ -55,7 +55,7 @@ export default () => (
                             <Grid.Column width={8}>
                                 <Blocktext blanco >
                                     El servicio es gratuito si se cuenta con una cuenta profesional, para más
-                                    información <a href="https://azure.microsoft.com/es-es/services/data-catalog/">pulse aquí</a>
+                                    información <a target="_blank" href="https://azure.microsoft.com/es-es/services/data-catalog/">pulse aquí</a>
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
