@@ -27,7 +27,7 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title>
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
@@ -58,11 +58,11 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar >
+                                <Title >
                                     Informacion sobre la pagina
                                 </Title>
 
-                                <Blocktext >
+                                <Blocktext naranja>
                                 Es un servicio el cual permite analizar textos, identificando idioma, opinión respecto al tema, frases clave y entidades mencionadas en el texto esta api es capaz de detectar 120 idiomas
                                 </Blocktext>
                             </Grid.Column>

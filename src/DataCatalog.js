@@ -28,7 +28,7 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title verde>
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
@@ -59,11 +59,11 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar >
+                                <Title verde >
                                     Informacion sobre la pagina
                                 </Title>
 
-                                <Blocktext >
+                                <Blocktext blanco >
                                 Es un servicio el cual permite a cualquier tipo de usuario un control sobre sus datos haciendo de esta forma que sea más sencillo la búsqueda de ellos en las bases de datos a nivel empresarial.
                                 </Blocktext>
                             </Grid.Column>

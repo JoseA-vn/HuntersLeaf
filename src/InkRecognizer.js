@@ -26,7 +26,7 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title morado>
                                     Ejemplo sobre como usarlo
                                 </Title>
                                 <Blocktext >
@@ -57,11 +57,11 @@ export default () => (
                                 </Segment>
                             </Grid.Column>
                             <Grid.Column width={10}>
-                                <Title subrayar>
+                                <Title morado>
                                     Informacion sobre la pagina
                                 </Title>
                                 
-                                <Blocktext >
+                                <Blocktext>
                                 Ink Recognizer es un servicio que utiliza la inteligencia artificial para reconocer patrones realizados por un lápiz digital estos ya sean escritura manual, objetos, formas, diseños, etc
                                 </Blocktext>
                             </Grid.Column>
