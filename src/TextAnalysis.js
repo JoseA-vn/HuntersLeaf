@@ -1,41 +1,78 @@
 import React from 'react';
-import { Button, Grid, Message, Image, GridColumn } from 'semantic-ui-react';
-import logo from "./Images/redwoods.png";
+import { Button, Grid, Message, Image, GridColumn, Segment } from 'semantic-ui-react';
+import logo from "./Images/BlackWood.jpg";
 import Menu from "./MenuVer";
-import BackgroundSlider from 'react-background-slider'
+import log from "./Images/TextAnalysis.jpeg";
+import lo from "./Images/TextAnalysis2.jpeg";
+import { Title, Sub, Blocktext } from "./Styled_components/Letras";
 
+var sectionBackground = {
+    width: "100%",
+    height: "100vh",
+    backgroundImage: `url(${logo})`
+
+}
 
 export default () => (
-
-    <div>
-        <BackgroundSlider images={[logo]} duration={2} transition={3} />
+    <section style={sectionBackground}>
         <Menu />
-        <Grid celled>
-            <Grid.Row>
-                <Grid.Column width={3}>
-                    <Image src='https://www.ontotext.com/wp-content/uploads/2016/01/multitudes-of-content-illustration.jpg' />
-                </Grid.Column>
-                <Grid.Column width={13}>
-                    Informacion sobre la pagina
-      </Grid.Column>
-            </Grid.Row>
+        <Grid centered>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="purple" >
+                    <Grid >
+                        <Grid.Row>
+                            <Grid.Column width={5}>
+                                <Segment inverted color="purple">
+                                    <Image src={log} />
+                                </Segment>
+                            </Grid.Column>
+                            <Grid.Column width={10}>
+                                <Title>
+                                    Ejemplo sobre como usarlo
+                                </Title>
+                                <Blocktext >
 
-            <Grid.Row>
-                <Grid.Column width={3}>
-                    <Image src='https://www.questionpro.com/userimages/site_media/text-analysis.png' />
-                </Grid.Column>
-                <Grid.Column width={10}>
-                    Holita
-      </Grid.Column>
-                <Grid.Column width={3}>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-                </Grid.Column>
-            </Grid.Row>
+                                </Blocktext>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+                </Segment>
+            </Grid.Column>
         </Grid>
 
+        <Grid centered >
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="purple">
 
+                </Segment>
+            </Grid.Column>
+        </Grid>
+        <Grid centered>
+            <Grid.Column width={15}>
+                <Segment inverted tertiary color="purple" >
+                    <Grid >
+                        <Grid.Row>
+                            <Grid.Column width={5}>
+                                <Segment inverted color="purple">
+                                    <Image src = {lo}/>
+                                </Segment>
+                            </Grid.Column>
+                            <Grid.Column width={10}>
+                                <Title >
+                                    Informacion sobre la pagina
+                                </Title>
 
-    </div>
+                                <Blocktext naranja>
+                                Es un servicio el cual permite analizar textos, identificando idioma, opinión respecto al tema, frases clave y entidades mencionadas en el texto esta api es capaz de detectar 120 idiomas
+                                </Blocktext>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+                </Segment>
+            </Grid.Column>
+        </Grid>
+    </section>
+
 
 
 

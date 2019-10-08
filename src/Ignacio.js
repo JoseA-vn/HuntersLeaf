@@ -3,7 +3,7 @@ import Butto from "./Styled_components/standbutton";
 import Menu from "./MenuVer";
 import Fut from "./Fut";
 import Box from "./Styled_components/box";
-import {Title, Sub} from "./Letras";
+import {Title, Sub} from "./Styled_components/Letras";
 import Modal from "./modal";
 
 export default () => (
