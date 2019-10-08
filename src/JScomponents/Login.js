@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import {
-  Form,
-  Message,
-  Segment,
-} from 'semantic-ui-react';
-/*Base de un Login para testeo.*/
+import { Form, Message, Segment } from 'semantic-ui-react';
 
 class FormExampleCaptureValues extends Component {
-//  state = { todos : [] }
+  //  state = { todos : [] }
   state = { name: '', email: '' }
-/*  datos(){
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(res => res.json())
-    .then((json) => {this.setState({todos : json}) 
-    console.log(this.state.todos)})
-    .catch(console.log)
-  }*/
-  
+  /*  datos(){
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(res => res.json())
+      .then((json) => {this.setState({todos : json}) 
+      console.log(this.state.todos)})
+      .catch(console.log)
+    }*/
+
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
@@ -25,7 +20,7 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/TextAnalysis/";
+          window.location.href = "/InkRecognizer/";
         }
         break;
     }
@@ -33,8 +28,8 @@ class FormExampleCaptureValues extends Component {
   render() {
     const { name, email } = this.state
     return (
-      < Segment >
-        <Form onSubmit={this.handleSubmit} size="small">
+      < Segment size="huge">
+        <Form onSubmit={this.handleSubmit}>
           <Form.Input
             fluid
             icon="user"
@@ -57,8 +52,9 @@ class FormExampleCaptureValues extends Component {
           <Form.Button color="facebook" fluid size="mini" content="Conectarse" />
 
         </Form>
-        <Message size="mini">
-          ¿Aún no te has registrado? <a href="/Jose/">Crear una Cuenta</a>
+        <Message size="small">
+          Email= jose<br></br>
+          Password = jose
         </Message>
       </Segment >
     )

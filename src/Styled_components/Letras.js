@@ -1,15 +1,27 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 const Title = styled.h1`
-  font-family: Monospace;
-  font-size: 1.5em;
+  font-family: Courier New;
+  font-size: 3em;
   text-align: left;
-  color: orange;
+  color: #6da4fc;
+  text-shadow: 3px 2px black;
+
+  ${props => props.subrayar&& css`
+  text-decoration: underline;
+`}
 `;
 const Sub = styled.h2`
 font-family: Arial;
-font-size: 1.5em;
+font-size: 2em;
 text-align: left;
 color: blue;
 `;
-export {Sub,Title}
+const Blocktext = styled.h3`
+font-family: Verdana,sans-serif;
+text-align: justify;
+font-size: 20px;
+line-height: 1.5;
+color: #26b54c;
+`;
+export {Sub,Title,Blocktext}
