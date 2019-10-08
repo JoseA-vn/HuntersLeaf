@@ -4,7 +4,7 @@ const Title = styled.h1`
   font-family: Courier New;
   font-size: 3em;
   text-align: left;
-  color: #d138ff;
+  color: #6da4fc;
   text-shadow: 3px 2px black;
 
   ${props => props.subrayar&& css`
