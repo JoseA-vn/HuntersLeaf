@@ -7,15 +7,15 @@ import Login from "./Login";
 var sectionBackground = {
   width: "100%",
   height: "100vh",
-  backgroundImage: `url(${Background})`
+  backgroundImage: `url(${Background})`,
+  backgroundSize: 'cover'
 
 }
 
 export default () => (
-  <div>
     <section style={sectionBackground}>
       <Menu />
-      <Grid centered columns={2}>
+      <Grid centered>
         <Grid.Row>
         </Grid.Row>
         <Grid.Row>
@@ -30,5 +30,4 @@ export default () => (
         </Grid.Row>
       </Grid>
     </section>
-  </div>
 );

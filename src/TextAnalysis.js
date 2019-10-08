@@ -1,23 +1,25 @@
 import React from 'react';
-import { Button, Grid, Message, Image, GridColumn } from 'semantic-ui-react';
-import logo from "./Images/redwoods.png";
+import { Grid, Image, Container } from 'semantic-ui-react';
 import Menu from "./MenuVer";
-import BackgroundSlider from 'react-background-slider'
+import Background from "./Images/BlackWood.jpg";
 
-
+var sectionBackground = {
+    width: "100%",
+    height: "100vh",
+    backgroundImage: `url(${Background})`,
+    backgroundSize: 'cover'
+}
 export default () => (
-
-    <div>
-        <BackgroundSlider images={[logo]} duration={2} transition={3} />
+    <section style={sectionBackground}>
         <Menu />
-        <Grid celled>
+        <Grid >
             <Grid.Row>
                 <Grid.Column width={3}>
-                    <Image src='https://www.ontotext.com/wp-content/uploads/2016/01/multitudes-of-content-illustration.jpg' />
+                    <Image src='https://www.ontotext.com/wp-content/uploads/2016/01/multitudes-of-content-illustration.jpg' bordered />
                 </Grid.Column>
                 <Grid.Column width={13}>
                     Informacion sobre la pagina
-      </Grid.Column>
+                    </Grid.Column>
             </Grid.Row>
 
             <Grid.Row>
@@ -26,16 +28,13 @@ export default () => (
                 </Grid.Column>
                 <Grid.Column width={10}>
                     Holita
-      </Grid.Column>
+                    </Grid.Column>
                 <Grid.Column width={3}>
                     <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                 </Grid.Column>
             </Grid.Row>
         </Grid>
-
-
-
-    </div>
+    </section>
 
 
 

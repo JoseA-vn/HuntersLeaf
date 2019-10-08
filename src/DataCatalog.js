@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button, Grid, Message, Image, GridColumn } from 'semantic-ui-react';
-import logo from "./Images/BlackWood.jpg"
+import logo from "./Images/wood.jpg"
 import Menu from "./MenuVer";
 import {Title, Sub} from "./Styled_components/Letras";
 
 var sectionBackground = {
     width: "100%",
     height: "100vh",
-    backgroundImage: `url(${logo})`
+    backgroundImage: `url(${logo})`,
+    backgroundSize: 'cover'
 
 }
 

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component } from 'react';
 import {
   Form,
   Message,
@@ -25,7 +25,7 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/Jose/";
+          window.location.href = "/TextAnalysis/";
         }
         break;
     }
@@ -34,7 +34,7 @@ class FormExampleCaptureValues extends Component {
     const { name, email } = this.state
     return (
       < Segment >
-        <Form onSubmit={this.handleSubmit} size="mini">
+        <Form onSubmit={this.handleSubmit} size="small">
           <Form.Input
             fluid
             icon="user"
