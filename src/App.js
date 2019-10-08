@@ -1,14 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import InkRecognizer from "./InkRecognizer"
-import Home from "./Home";
-import DataCatalog from './DataCatalog';
+import InkRecognizer from "./JScomponents/InkRecognizer"
+import Home from "./JScomponents/Home";
+import logo from "./Images/BlackWood.jpg";
+import DataCatalog from './JScomponents/DataCatalog';
+import TextAnalysis from './JScomponents/TextAnalysis';
+import Iniciar from "./JScomponents/Iniciar";
 
-import TextAnalysis from './TextAnalysis';
+var sectionBackground = {
+  width: "100%",
+  height: "130vh",
+  backgroundImage: `url(${logo})`,
+  backgroundSize: 'cover'
 
+}
 
 function Index() {
-  return <Home/>;
+  return <Home />;
 }
 
 function JoseCall() {
@@ -20,16 +28,19 @@ function Raulcall() {
 }
 
 function Users() {
-  return <TextAnalysis/>
+  return <TextAnalysis />
 }
-
+function Inicio() {
+  return <Iniciar />
+}
 export default () => (
-
-  <Router>
-    <Route path="/" exact component={Index} />
-    <Route path="/InkRecognizer/" component={JoseCall} />
-    <Route path="/DataCatalog/" component={Raulcall} />
-    <Route path="/TextAnalysis/" component={Users} />
-  </Router>
-
+  <section style={sectionBackground}>
+    <Router>
+      <Route path="/" exact component={Index} />
+      <Route path="/InkRecognizer/" component={JoseCall} />
+      <Route path="/DataCatalog/" component={Raulcall} />
+      <Route path="/TextAnalysis/" component={Users} />
+      <Route path="/Iniciar/" component={Inicio} />
+    </Router>
+  </section>
 );

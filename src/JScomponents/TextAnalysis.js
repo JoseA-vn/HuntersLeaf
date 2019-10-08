@@ -1,37 +1,35 @@
 import React from 'react';
-import { Button, Grid, Message, Image, GridColumn, Segment } from 'semantic-ui-react';
-import logo from "./Images/BlackWood.jpg";
+import { Grid, Image, Segment } from 'semantic-ui-react';
 import Menu from "./MenuVer";
-import log from "./Images/TextAnalysis.jpeg";
-import lo from "./Images/TextAnalysis2.jpeg";
-import { Title, Sub, Blocktext } from "./Styled_components/Letras";
+import log from "../Images/TextAnalysis.jpeg";
+import lo from "../Images/TextAnalysis2.jpeg";
+import { Title, Blocktext } from "../Styled_components/Letras";
 
-var sectionBackground = {
-    width: "100%",
-    height: "100vh",
-    backgroundImage: `url(${logo})`
 
-}
 
 export default () => (
-    <section style={sectionBackground}>
+    <section>
         <Menu />
         <Grid centered>
+            <Grid.Row></Grid.Row>
             <Grid.Column width={15}>
                 <Segment inverted tertiary color="purple" >
                     <Grid >
                         <Grid.Row>
-                            <Grid.Column width={5}>
+                            <Grid.Column width={7}>
                                 <Segment inverted color="purple">
                                     <Image src={log} />
                                 </Segment>
                             </Grid.Column>
-                            <Grid.Column width={10}>
-                                <Title>
-                                    Ejemplo sobre como usarlo
+                            <Grid.Column width={8}>
+                                <Title subrayar >
+                                    Text Analysis
                                 </Title>
-                                <Blocktext >
 
+                                <Blocktext naranja>
+                                    Es un servicio el cual permite analizar textos, identificando idioma,
+                                    opinión respecto al tema, frases clave y entidades mencionadas en el
+                                    texto esta api es capaz de detectar 120 idiomas
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -52,18 +50,15 @@ export default () => (
                 <Segment inverted tertiary color="purple" >
                     <Grid >
                         <Grid.Row>
-                            <Grid.Column width={4}>
+                            <Grid.Column width={6}>
                                 <Segment inverted color="purple">
                                     <Image src={lo} />
                                 </Segment>
                             </Grid.Column>
-                            <Grid.Column width={10}>
-                                <Title >
-                                    Informacion sobre la pagina
-                                </Title>
-
-                                <Blocktext naranja>
-                                    Es un servicio el cual permite analizar textos, identificando idioma, opinión respecto al tema, frases clave y entidades mencionadas en el texto esta api es capaz de detectar 120 idiomas
+                            <Grid.Column width={8}>
+                                <Blocktext naranja >
+                                    Es un servicio completamente gratis incluído dentro de la cuenta de azure
+                                    para más información <a href="https://azure.microsoft.com/es-es/services/cognitive-services/text-analytics/">pulse aquí</a>
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -79,14 +74,4 @@ export default () => (
             </Grid.Column>
         </Grid>
     </section>
-
-
-
-
-
-
-
-
-
-
 );

@@ -1,48 +1,39 @@
-import React, { Component, useEffect, useState } from 'react';
-import {
-  Form,
-  Message,
-  Segment,
-} from 'semantic-ui-react';
-import Modal from "./Home";
-/*Base de un Login para testeo.*/
-function Mufuncion() {
-  return  ;
-}
+import React, { Component } from 'react';
+import { Form, Message, Segment } from 'semantic-ui-react';
+
+
+
 
 class FormExampleCaptureValues extends Component {
-//  state = { todos : [] }
+  //  state = { todos : [] }
   state = { name: '', email: '' }
-/*  datos(){
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(res => res.json())
-    .then((json) => {this.setState({todos : json}) 
-    console.log(this.state.todos)})
-    .catch(console.log)
-  }*/
-  
+  /*  datos(){
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(res => res.json())
+      .then((json) => {this.setState({todos : json}) 
+      console.log(this.state.todos)})
+      .catch(console.log)
+    }*/
+
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
   handleSubmit = () => {
     const { name, email } = this.state
     switch (name) {
-      case "jose":
-        if (email == "jose") {
-          window.location.href = "/Ignacio/";
+      case "inicio":
+        if (email == "inicio") {
+          window.location.href = "/Iniciar/";
         }
-        else 
-        {
-          
-        }
+
         break;
     }
   }
   render() {
     const { name, email } = this.state
     return (
-      < Segment >
-        <Form onSubmit={this.handleSubmit} size="mini">
+      < Segment size="huge">
+        <Form onSubmit={this.handleSubmit}>
           <Form.Input
             fluid
             icon="user"
@@ -65,8 +56,9 @@ class FormExampleCaptureValues extends Component {
           <Form.Button color="facebook" fluid size="mini" content="Conectarse" />
 
         </Form>
-        <Message size="mini">
-          ¿Aún no te has registrado? <a href="/Jose/">Crear una Cuenta</a>
+        <Message size="small">
+          Email= inicio<br></br>
+          Password = inicio
         </Message>
       </Segment >
     )

@@ -6,7 +6,10 @@ export default () => (
 
   <Menu inverted icon='labeled' size='small' borderless >
     <Menu.Item>
-      <Image size="mini" href="/" src={require("./Images/jeje.jpg")} />
+      <Image size="mini" href="/" src={require("../Images/jeje.jpg")} />
+    </Menu.Item>
+    <Menu.Item>
+      <Button secondary href="/Iniciar/">Inicio</Button>
     </Menu.Item>
     <Menu.Item>
       <Button secondary size='mini' href="/InkRecognizer/">InkRecognizer</Button>

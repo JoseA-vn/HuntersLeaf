@@ -37,5 +37,8 @@ ${props => props.blanco && css`
 ${props => props.naranja && css`
   color: #ffd280;
 `}
+${props => props.negro && css`
+  color: black;
+`}
 `;
 export { Sub, Title, Blocktext }
