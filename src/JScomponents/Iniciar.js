@@ -34,7 +34,8 @@ export default () => (
                                     Pagina De Inicio
                                 </Title>
                                 <Blocktext negro>
-                                    En esta pagina se presentara información acerca de algunos servicios de Microsoft Azure con una breve descripción de estas.
+                                    En esta pagina se presentara información acerca de algunos servicios de
+                                    Microsoft Azure con una breve descripción de estas.
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -62,7 +63,10 @@ export default () => (
                             </Grid.Column>
                             <Grid.Column width={8}>
                                 <Blocktext negro >
-                                    Esta pagina esta hecha con react.js , la cual es una librería de javascript para desarrollar interfaces, han sido utilizados modulos como: styled components, semantic-ui y react router.
+                                    <br></br>
+                                    Esta pagina fue desarrollada basada en componentes react, la cual es una librería de
+                                    javascript para el desarrollo de interfaces para usuarios, han sido utilizados diversos
+                                    módulos react, para más información sobre React <a target="_blank" href="https://reactjs.org">pulse aquí.</a>
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>

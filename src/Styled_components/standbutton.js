@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 export default styled.a`
 
   background: transparent;
@@ -14,12 +14,12 @@ export default styled.a`
    
   }
 
-  ${props => props.cancelar&& css`
+  ${props => props.cancelar && css`
     background: red;
     color: white;
     border: 2px solid red;
   `}
-  ${props => props.aceptar&& css`
+  ${props => props.aceptar && css`
   background: green;
   color: white;
   border: 2px solid green;

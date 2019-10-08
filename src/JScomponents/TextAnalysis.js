@@ -29,7 +29,7 @@ export default () => (
                                 <Blocktext naranja>
                                     Es un servicio el cual permite analizar textos, identificando idioma,
                                     opinión respecto al tema, frases clave y entidades mencionadas en el
-                                    texto esta api es capaz de detectar 120 idiomas
+                                    texto esta api es capaz de detectar 120 idiomas.
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>
@@ -50,7 +50,7 @@ export default () => (
                 <Segment inverted tertiary color="purple" >
                     <Grid >
                         <Grid.Row>
-                            <Grid.Column width={6}>
+                            <Grid.Column width={7}>
                                 <Segment inverted color="purple">
                                     <Image src={lo} />
                                 </Segment>
@@ -58,7 +58,7 @@ export default () => (
                             <Grid.Column width={8}>
                                 <Blocktext naranja >
                                     Es un servicio completamente gratis incluído dentro de la cuenta de azure
-                                    para más información <a href="https://azure.microsoft.com/es-es/services/cognitive-services/text-analytics/">pulse aquí</a>
+                                    para más información <a target="_blank" href="https://azure.microsoft.com/es-es/services/cognitive-services/text-analytics/">pulse aquí</a>
                                 </Blocktext>
                             </Grid.Column>
                         </Grid.Row>

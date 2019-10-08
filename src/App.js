@@ -9,7 +9,7 @@ import Iniciar from "./JScomponents/Iniciar";
 
 var sectionBackground = {
   width: "100%",
-  height: "130vh",
+  height: "147vh",
   backgroundImage: `url(${logo})`,
   backgroundSize: 'cover'
 
