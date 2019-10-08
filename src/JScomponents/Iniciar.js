@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Grid, Segment } from 'semantic-ui-react';
 import logo from "../Images/BlackWood.jpg";
-import log from "../Images/Trifenix.png";
+import log from "../Images/React.jpeg";
 import Images from "../Images/Uv.jpg"
 import Menu from "./MenuVer";
 import { Title, Blocktext } from "../Styled_components/Letras";
