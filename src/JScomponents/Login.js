@@ -1,11 +1,7 @@
-import React, { Component, useEffect, useState } from 'react';
-import {
-  Form,
-  Message,
-  Segment,
-} from 'semantic-ui-react';
-import Modal from "./Home";
-/*Base de un Login para testeo.*/
+import React, { Component } from 'react';
+import { Form, Message, Segment } from 'semantic-ui-react';
+
+
 function Mufuncion() {
   return          <Message
   error
@@ -15,16 +11,16 @@ function Mufuncion() {
 }
 
 class FormExampleCaptureValues extends Component {
-//  state = { todos : [] }
+  //  state = { todos : [] }
   state = { name: '', email: '' }
-/*  datos(){
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(res => res.json())
-    .then((json) => {this.setState({todos : json}) 
-    console.log(this.state.todos)})
-    .catch(console.log)
-  }*/
-  
+  /*  datos(){
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(res => res.json())
+      .then((json) => {this.setState({todos : json}) 
+      console.log(this.state.todos)})
+      .catch(console.log)
+    }*/
+
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
@@ -33,7 +29,7 @@ class FormExampleCaptureValues extends Component {
     switch (name) {
       case "jose":
         if (email == "jose") {
-          window.location.href = "/Ignacio/";
+          window.location.href = "/TextAnalysis/";
         }
         else 
         {
@@ -45,8 +41,8 @@ class FormExampleCaptureValues extends Component {
   render() {
     const { name, email } = this.state
     return (
-      < Segment >
-        <Form onSubmit={this.handleSubmit} size="mini">
+      < Segment size="huge">
+        <Form onSubmit={this.handleSubmit}>
           <Form.Input
             fluid
             icon="user"
@@ -69,8 +65,9 @@ class FormExampleCaptureValues extends Component {
           <Form.Button color="facebook" fluid size="mini" content="Conectarse" />
 
         </Form>
-        <Message size="mini">
-          ¿Aún no te has registrado? <a href="/Jose/">Crear una Cuenta</a>
+        <Message size="small">
+          Email= jose<br></br>
+          Password = jose
         </Message>
       </Segment >
     )
